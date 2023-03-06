@@ -1,0 +1,245 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*##### for-phone-only ##########*/
+@media (max-width: 599px) {
+  header {
+    display: flex;
+    align-items: center;
+    padding: 19px 24px 25px 24px;
+  }
+  header .show-on-mobile {
+    height: 15px;
+    width: 16px;
+    margin-right: 16px;
+  }
+  header .logo-and-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header .logo-and-nav .logo {
+    height: 20px;
+    width: 137.5px;
+    margin-right: 89px;
+  }
+  header .logo-and-nav nav .first-ul {
+    display: none;
+  }
+  header .logo-and-nav nav .second-ul {
+    height: 24px;
+    width: 68px;
+    display: flex;
+    align-items: center;
+  }
+  header .logo-and-nav nav .second-ul .cart {
+    height: 20px;
+    width: 21.8211975098px;
+    margin-right: 22px;
+  }
+  header .logo-and-nav nav .second-ul .avatar {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+  }
+  header .logo-and-nav nav .second-ul .avatar img {
+    border-radius: 50%;
+  }
+  header hr {
+    display: none;
+  }
+  main {
+    padding-bottom: 88px;
+  }
+  main .product-image-and-thumbnails {
+    width: 375px;
+  }
+  main .product-image-and-thumbnails .product-img {
+    width: 375px;
+  }
+  main .product-image-and-thumbnails .thumbnails-dflex {
+    display: none;
+  }
+  main .text {
+    width: 360px;
+    padding: 24px;
+  }
+  main .text .sneaker {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1.84615px;
+    text-transform: uppercase;
+    color: #ff7e1b;
+    margin-bottom: 19px;
+  }
+  main .text h1 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 32px;
+    color: #1d2026;
+    margin-bottom: 15px;
+  }
+  main .text .these {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #69707d;
+    margin-bottom: 24px;
+  }
+  main .text .cost-and-discount {
+    display: flex;
+    align-items: center;
+  }
+  main .text .cost-and-discount .cost {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+    color: #1d2026;
+    margin-right: 16px;
+  }
+  main .text .cost-and-discount .discount {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ff7e1b;
+    background: #ffeee2;
+    border-radius: 6px;
+    height: 27px;
+    width: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main .text .cost-before {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    text-decoration-line: line-through;
+    color: #b6bcc8;
+    margin-bottom: 29px;
+  }
+  main .text .add-to-cart-stuff .quantity {
+    background: #f6f8fd;
+    border-radius: 10px;
+    height: 56px;
+    width: 327px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 16px;
+  }
+  main .text .add-to-cart-stuff .quantity .minus {
+    height: 1px;
+    width: 12px;
+  }
+  main .text .add-to-cart-stuff .quantity .number {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #1d2026;
+  }
+  main .text .add-to-cart-stuff .quantity .plus {
+    height: 12px;
+    width: 12px;
+  }
+  main .text .add-to-cart-stuff a .add {
+    background: #ff7e1b;
+    box-shadow: 0px 20px 50px -20px #ff7e1b;
+    border-radius: 10px;
+    height: 56px;
+    width: 327px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main .text .add-to-cart-stuff a .add img {
+    height: 16px;
+    width: 17.4569587708px;
+  }
+  main .text .add-to-cart-stuff a .add p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    margin-left: 16px;
+  }
+}
+/*############ for-tablet-portrait-up ##############*/
+@media (min-width: 600px) {
+  .show-on-mobile {
+    display: none;
+  }
+}
+/*############ for-tablet-landscape-up #############*/
+/*############ for-desktop-up ###########*/
+/*############ for-big-desktop-up ##########*//*# sourceMappingURL=style.css.map */
